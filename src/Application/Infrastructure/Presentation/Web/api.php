@@ -26,7 +26,7 @@ $appointmentController = new AppointmentController($appointmentService);
 
 $router->get('/appointments', [$appointmentController, 'index']);
 $router->post('/appointments/create', [$appointmentController, 'create']);
-$router->patch('/appointments/cancel', [$appointmentController, 'cancel']);
+$router->delete('/appointments/cancel', [$appointmentController, 'cancel']);
 
 
 $router->dispatch($_SERVER['REQUEST_METHOD'], $_SERVER['REQUEST_URI']);

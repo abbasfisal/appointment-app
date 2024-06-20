@@ -48,7 +48,7 @@ class Router
     public function delete($path, $handler): void
     {
         $this->routes[] = [
-            'method'  => 'GET',
+            'method'  => 'DELETE',
             'path'    => $path,
             'handler' => $handler
         ];
