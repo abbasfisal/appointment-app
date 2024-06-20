@@ -21,16 +21,7 @@ Run below Commands:
    ```bash
    make migrate
    ```
-
-5. url of project  `http://localhost:8081/`
-
-___
-- #### Run Tests
-   ```bash
-  make run-test
-   ```
-
-- #### Run Swagger Documentation  http://localhost:8081/doc/
+5. #### Run Swagger Documentation  http://localhost:8081/doc/
 
   Note: If the port or host address changes (e.g., from `localhost` to `127.0.0.1` or any other host address),
   you must update it in `doc/index.html`.
@@ -48,9 +39,12 @@ ___
               })
           }
     ```
-    
-  
 
+___
+- #### Run Tests
+   ```bash
+  make run-test
+   ```
 ___
 
 ## routes
