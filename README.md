@@ -24,10 +24,32 @@ Run below Commands:
 
 5. url of project  `http://localhost:8081/`
 
-- Run Tests
+___
+- #### Run Tests
    ```bash
   make run-test
    ```
+
+- #### Run Swagger Documentation  http://localhost:8081/doc/
+
+  Note: If the port or host address changes (e.g., from `localhost` to `127.0.0.1` or any other host address),
+  you must update it in `doc/index.html`.
+  ```
+      window.onload = function() {
+              SwaggerUIBundle({
+                  url: "http://localhost:8081/doc/swagger.php",
+                  dom_id: '#swagger-ui',
+                  presets: [
+                      SwaggerUIBundle.presets.apis,
+                      SwaggerUIStandalonePreset
+                  ],
+                  layout: "BaseLayout",
+                  deepLinking: true
+              })
+          }
+    ```
+    
+  
 
 ___
 
