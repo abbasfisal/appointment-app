@@ -19,6 +19,7 @@ class AppointmentRepository implements AppointmentRepositoryInterface
             appointments.id AS appointment_id,
             appointments.date as appointment_date,
             users.name AS user_name,
+            users.id AS user_id,
             time_slots.start_time,
             time_slots.end_time
         FROM
