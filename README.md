@@ -38,7 +38,7 @@ Run below Commands:
                   deepLinking: true
               })
           }
-    ```
+  ```
 
 ___
 - #### Run Tests
